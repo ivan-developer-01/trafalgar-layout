@@ -1,0 +1,38 @@
+html,
+body {
+	width: 100vw;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1263px;
+	margin: 0 auto;
+}
+
+/* header */
+.header {
+	padding-top: 56px;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header nav {
+	display: flex;
+	gap: 40px;
+	font-size: 18px;
+}
+
+.header nav a {
+	text-decoration: none;
+	color: #8f8a9a;
+}
+
+.header .nav__link-main {
+	color: #1F1534;
+}
+/* /header */
