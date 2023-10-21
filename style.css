@@ -2,12 +2,37 @@ html,
 body {
 	width: 100vw;
 	margin: 0;
+	padding: 0;
+	font-family: 'Mulish', sans-serif;
 }
 
 .container {
 	width: 100%;
 	max-width: 1263px;
 	margin: 0 auto;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+.button {
+	/* appearance: none; */
+	border: 1px solid #458FF6;
+	background: transparent;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 21px 41px;
+}
+
+.button.round-button {
+	border-radius: 999px;
+}
+
+.bg-blue {
+	background-color: #458FF6;
+	color: #FFF;
 }
 
 /* header */
@@ -36,3 +61,35 @@ body {
 	color: #1F1534;
 }
 /* /header */
+
+/* main-info */
+.main-info {
+	position: relative;
+}
+
+.main-info .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(images/main-info-overlay.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.main-info .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 109px;
+}
+
+.main-info p {
+	font-size: 21px;
+	line-height: 32px;
+	color: #7D7987;
+	margin-top: 25px;
+	margin-bottom: 45px;
+}
+/* /main-info */
