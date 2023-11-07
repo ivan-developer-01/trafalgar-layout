@@ -182,3 +182,47 @@ p {
 	min-width: 200px;
 }
 /* /our-services */
+
+/* apps */
+.apps {	
+	margin-top: 220px;
+}
+
+.apps .container {
+	display: grid;
+	gap: 265px;
+}
+
+.apps .flex-two-blocks {
+	display: flex;
+}
+
+.apps .flex-two-blocks div {
+	display: flex;
+	flex-direction: column;
+}
+
+.apps .flex-two-blocks h2 {
+	font-size: 36px;
+}
+
+.apps .flex-two-blocks hr {
+	text-align: left;
+	width: 56px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.apps .flex-two-blocks p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.apps .flex-two-blocks:first-child {
+	gap: 137px;
+}
+
+.apps .flex-two-blocks:last-child {
+	gap: 71px;
+}
+/* /apps */
