@@ -230,7 +230,7 @@ p {
 /* reviews */
 .reviews {
 	margin-top: 266px;
-	margin-bottom: 340px;
+	margin-bottom: 340px /* *? BUGGY DEBUGGY BIG BUG */;
 }
 
 .reviews .container {
@@ -364,7 +364,6 @@ p {
 	top: -15px;
 	right: -47px;
 	background-image: url(images/overlay-white.svg);
-	z-index: 1;
 }
 
 .reviews .container::before,

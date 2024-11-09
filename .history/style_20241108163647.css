@@ -230,11 +230,7 @@ p {
 /* reviews */
 .reviews {
 	margin-top: 266px;
-	margin-bottom: 340px;
-}
-
-.reviews .container {
-	position: relative;
+	margin-bottom: 340px /* *? BUGGY DEBUGGY BIG BUG */;
 }
 
 .reviews .review-slider-container {
@@ -294,7 +290,7 @@ p {
 .reviews .dots {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	gap: 10px;
 	margin-top: 42px;
 }
 
@@ -305,11 +301,7 @@ p {
 	opacity: 0.3;
 	border-radius: 50%;
 	cursor: pointer;
-	transition: 0.1s ease-in-out;
-}
-
-.reviews .dot+.dot {
-	margin-left: 18px;
+	transition: opacity 0.3s ease-in-out;
 }
 
 .reviews .dot.active,
@@ -321,58 +313,13 @@ p {
 	filter: brightness(0.5);
 }
 
-.reviews .arrow-left,
-.reviews .arrow-right {
-	background: url(images/reviews/arrow-right.svg) no-repeat;
-	width: 31px;
-	height: 20px;
-	cursor: pointer;
-	transition: 0.1s ease-in-out;
-}
-
-.reviews .arrow-left:hover,
-.reviews .arrow-right:hover {
-	opacity: 1;
-}
-
-.reviews .arrow-left:active,
-.reviews .arrow-right:active {
-	filter: brightness(0.5);
-}
-
 .reviews .arrow-left {
+	background: url(images/reviews/arrow-right.svg) no-repeat;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
 	opacity: 0.3;
+	transition: opacity 0.3s ease-in-out;
 	transform: rotate(180deg);
-}
-
-.reviews .arrow-container-left {
-	margin-right: 90px;
-}
-
-.reviews .arrow-container-right {
-	margin-left: 90px;
-}
-
-.reviews .container::before {
-	bottom: 109px;
-	left: -50px;
-	z-index: -1;
-	background-image: url(images/overlay.svg);
-}
-
-.reviews .container::after {
-	top: -15px;
-	right: -47px;
-	background-image: url(images/overlay-white.svg);
-	z-index: 1;
-}
-
-.reviews .container::before,
-.reviews .container::after {
-	content: '';
-	position: absolute;
-	width: 132px;
-	height: 115px;
-	background-repeat: no-repeat;
 }
 /* /reviews */

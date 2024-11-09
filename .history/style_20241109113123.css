@@ -230,7 +230,7 @@ p {
 /* reviews */
 .reviews {
 	margin-top: 266px;
-	margin-bottom: 340px;
+	margin-bottom: 340px /* *? BUGGY DEBUGGY BIG BUG */;
 }
 
 .reviews .container {
@@ -369,7 +369,8 @@ p {
 
 .reviews .container::before,
 .reviews .container::after {
-	content: '';
+	content: 'Hellol';
+	color: red;
 	position: absolute;
 	width: 132px;
 	height: 115px;
